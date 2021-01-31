@@ -1,0 +1,150 @@
+.form-modal {
+  width: 448px;
+
+  &__name {
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-align: center;
+    color: $title-text-color;
+    font-size: 20px;
+    font-weight: $title-font-weight;
+    line-height: 1.15;
+  }
+
+  &__checkbox {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    text-align: center;
+  }
+}
+
+.form-modal__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &--comment {
+    margin-bottom: 20px;
+  }
+}
+
+.form-modal__content-label {
+  padding-bottom: 4px;
+
+  font-size: 12px;
+  font-weight: $primary-font-weight;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form-modal__input {
+  padding: 12px 12px 12px 42px;
+  color: $title-text-color;
+  border-radius: $border-radius-button;
+  @include bordered(rgba(33, 33, 33, 0.2));
+  @include transit(border-color);
+
+  outline: transparent;
+  cursor: pointer;
+
+  &--comment {
+    resize: none;
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+  }
+
+  .form-modal__label:focus-within & {
+    border-color: $accent-color;
+  }
+}
+
+.form-modal__input--comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form-modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  cursor: pointer;
+  fill: $title-text-color;
+  @include transit(fill);
+
+  .form-modal__label:focus-within & {
+    fill: $accent-color;
+  }
+}
+
+.form-modal__check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-modal__label-check {
+  display: inline-block;
+  padding-right: 11px;
+  padding-left: 36px;
+
+  font-weight: $primary-font-weight;
+
+  .form-modal__link {
+    text-decoration-line: underline;
+    color: $accent-color;
+  }
+}
+
+.form-modal__label-check::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: inline-block;
+  margin-right: 6px;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+
+  background-color: $primary-white-color;
+  /* background-image: url(../images/svg/vector.svg); */
+
+  @include transit(background-color, border-color);
+
+  .form-modal__check:checked ~ & {
+    width: 16px;
+    height: 15px;
+    background-color: $accent-color;
+    border-color: $accent-color;
+    background-image: url(../images/svg/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+
+    border-radius: 2px;
+  }
+
+  .form-modal__check:focus ~ & {
+    border-color: $accent-color;
+  }
+}
+
+.button-send {
+  @extend %button;
+  padding-right: 56px;
+  padding-left: 56px;
+}

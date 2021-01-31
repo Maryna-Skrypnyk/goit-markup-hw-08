@@ -1,0 +1,55 @@
+.section-team {
+  @extend %section;
+  background-color: $secondary-bg-color;
+}
+
+.section__title {
+  @extend %title-section;
+}
+
+.team-list {
+  @extend %list;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    padding-bottom: 30px;
+
+    background: $primary-white-color;
+    text-align: center;
+
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &__image {
+    display: block;
+    margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: $secondary-font-weight;
+    color: $title-text-color;
+    margin-top: 0;
+    font-size: $button-team-project-font-size;
+    line-height: 1.19;
+  }
+
+  &__position {
+    margin-bottom: 0;
+    font-weight: $primary-font-weight;
+    margin-top: 0;
+    font-size: $button-team-project-font-size;
+    line-height: 1.19;
+  }
+}

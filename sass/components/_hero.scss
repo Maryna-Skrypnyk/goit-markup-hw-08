@@ -1,0 +1,31 @@
+.section-hero {
+  @extend %section;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.overlay {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $footer-bg-color;
+  border-top: 1px solid #ececec;
+}
+
+.overlay__title {
+  @extend %title-main;
+}
+
+.button-hero {
+  @extend %button;
+}

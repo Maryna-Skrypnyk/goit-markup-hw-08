@@ -1,0 +1,23 @@
+.logo {
+  text-decoration: none;
+  color: $accent-color;
+  font-family: $secondary-font;
+  font-weight: $title-font-weight;
+  font-size: $logo-font-size;
+  line-height: 1.19;
+
+  &__header {
+    @extend .logo;
+    color: $black-color;
+  }
+
+  &__footer {
+    @extend .logo;
+    color: $primary-white-color;
+  }
+}
+
+.address-footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}

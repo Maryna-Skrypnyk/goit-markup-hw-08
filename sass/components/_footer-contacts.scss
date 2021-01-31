@@ -1,0 +1,34 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-bg-color;
+}
+
+.address-footer__address {
+  margin-bottom: 9px;
+
+  color: $primary-white-color;
+  text-decoration: none;
+
+  font-weight: $primary-font-weight;
+  font-style: normal;
+}
+
+.contact-footer {
+  &__list {
+    @extend %list;
+    display: block;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    color: $text-footer;
+    text-decoration: none;
+
+    font-weight: $primary-font-weight;
+  }
+}

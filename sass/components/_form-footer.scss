@@ -1,0 +1,54 @@
+.subscribe {
+  margin-left: 94px;
+
+  width: 570px;
+  height: 86px;
+
+  &__content {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    padding: 16px 16px;
+    min-width: 358px;
+    height: 50px;
+    color: $primary-white-color;
+    font-size: $button-team-project-font-size;
+    font-weight: $primary-font-weight;
+    background-color: $footer-bg-color;
+    @include bordered(rgba(255, 255, 255, 0.3));
+    border-radius: $border-radius-button;
+  }
+
+  &__input::placeholder {
+    color: $text-footer;
+    font-size: $button-team-project-font-size;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+}
+
+.button-subscribe {
+  @extend %button;
+  display: flex;
+  align-items: center;
+  padding-right: 28px;
+  padding-left: 28px;
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+.button__icon {
+  margin-left: 10px;
+}
