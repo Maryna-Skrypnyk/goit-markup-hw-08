@@ -868,8 +868,8 @@ img {
   transition-property: color, border-color, -webkit-filter;
   transition-property: color, border-color, filter;
   transition-property: color, border-color, filter, -webkit-filter;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
@@ -979,8 +979,8 @@ img {
     letter-spacing: 0.02em;
     -webkit-transition-property: color;
     transition-property: color;
-    -webkit-transition-duration: 5000ms;
-            transition-duration: 5000ms;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1062,8 +1062,8 @@ img {
     color: #757575;
     -webkit-transition-property: color;
     transition-property: color;
-    -webkit-transition-duration: 5000ms;
-            transition-duration: 5000ms;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1125,8 +1125,8 @@ img {
   opacity: 1;
   -webkit-transition-property: opacity;
   transition-property: opacity;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
@@ -1155,8 +1155,8 @@ img {
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1178,8 +1178,8 @@ img {
     transition-property: opacity, -webkit-transform;
     transition-property: transform, opacity;
     transition-property: transform, opacity, -webkit-transform;
-    -webkit-transition-duration: 5000ms;
-            transition-duration: 5000ms;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1218,8 +1218,8 @@ img {
   fill: #000000;
   -webkit-transition-property: fill;
   transition-property: fill;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1276,8 +1276,8 @@ img {
   transition-property: color, background-color, -webkit-filter;
   transition-property: color, background-color, filter;
   transition-property: color, background-color, filter, -webkit-filter;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
@@ -1419,8 +1419,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
@@ -1620,8 +1620,8 @@ img {
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, box-shadow;
   transition-property: color, background-color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1702,8 +1702,8 @@ img {
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
   transition-property: box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1732,8 +1732,8 @@ img {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1820,8 +1820,8 @@ img {
   letter-spacing: 0.01em;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1839,8 +1839,8 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transition-property: border-color;
   transition-property: border-color;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
@@ -1912,8 +1912,8 @@ img {
   fill: #212121;
   -webkit-transition-property: fill;
   transition-property: fill;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1973,8 +1973,8 @@ img {
   /* background-image: url(../images/svg/vector.svg); */
   -webkit-transition-property: background-color, border-color;
   transition-property: background-color, border-color;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2020,8 +2020,8 @@ img {
   color: #000000;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2112,8 +2112,8 @@ img {
   line-height: 1.18;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2140,8 +2140,8 @@ img {
   color: #757575;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 5000ms;
-          transition-duration: 5000ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
