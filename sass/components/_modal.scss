@@ -9,6 +9,7 @@
   opacity: 1;
   @include transit(opacity);
   overflow-y: scroll;
+  z-index: 1;
 }
 
 .backdrop.is-hidden {
