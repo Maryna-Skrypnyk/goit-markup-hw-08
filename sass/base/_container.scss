@@ -3,29 +3,47 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 
   &--header {
-    @extend .container;
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &--hero {
-    @extend .container;
-    padding: 200px 0 0;
-    width: 696px;
+    padding: 118px 0 0;
+    width: 360px;
+
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0 0;
+      width: 696px;
+    }
   }
 
   &--footer {
-    @extend .container;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
   }
 
   &--projects {
-    @extend .container;
-    margin-bottom: 0;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 }

@@ -1,56 +1,92 @@
 .contacts-header {
-  margin-left: auto;
+  display: none;
 
   &__list {
     @extend %list;
   }
-}
 
-.contacts-header__item:not(:nth-child(1)) {
-  margin-left: 50px;
-}
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // flex-direction: column;
+    margin-left: auto;
 
-.contacts-header__item {
-  &--mail {
-    width: 161px;
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
-  &--tel {
-    width: 142px;
+  @media screen and (min-width: 1200px) {
+    &__list {
+      display: flex;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &__item:not(:nth-child(1)) {
+      margin-left: 50px;
+    }
   }
 }
 
 .contacts-header__link {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: none;
 
-  text-decoration: none;
-  font-weight: $secondary-font-weight;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $primary-text-color;
-  @include transit(color);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: $secondary-font-size;
+    font-weight: $secondary-font-weight;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    @include transit(color);
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: $main-font-size;
+    line-height: 1.14;
   }
 }
 
 .contacts-header__icon {
-  margin-right: 10px;
-  fill: currentColor;
+  display: none;
 
-  &--envelope {
-    width: 16px;
-    height: 12px;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-right: 8px;
+    fill: currentColor;
+
+    &--envelope {
+      width: 14px;
+      height: 10px;
+    }
+
+    &--smartphone {
+      width: 10px;
+      height: 14px;
+    }
   }
 
-  &--smartphone {
-    width: 10px;
-    height: 16px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+
+    &--envelope {
+      width: 16px;
+      height: 12px;
+    }
+
+    &--smartphone {
+      height: 16px;
+    }
   }
 }

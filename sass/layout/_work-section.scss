@@ -2,8 +2,10 @@
   @media screen and (max-width: 1199px) {
     display: none;
   }
+
   @extend %section;
-  padding-top: 0px;
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .section__title {
@@ -12,6 +14,7 @@
 
 .work-list {
   @extend %list;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -26,12 +29,6 @@
 
   &__thumb {
     position: relative;
-  }
-
-  &__image {
-    display: block;
-    max-width: 100%;
-    height: auto;
   }
 
   &__overlay {
@@ -50,10 +47,5 @@
     text-align: center;
 
     @include title-block($primary-white-color);
-    // color: $primary-white-color;
-    // font-weight: $title-font-weight;
-    // font-size: $main-font-size;
-    // line-height: 1.14;
-    // text-transform: uppercase;
   }
 }

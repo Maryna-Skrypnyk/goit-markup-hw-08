@@ -1,25 +1,34 @@
 .project-card-list {
   @extend %list;
-  flex-wrap: wrap;
-  margin: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .project {
-  width: 370px;
-  margin: 15px;
-  // border: 1px solid $border-project-color;
+  @include bordered($border-project-color);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    // max-width: 354px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 
   &__content {
     padding: 20px 24px;
-
     background-color: $primary-white-color;
-    @include border();
   }
 
   &__name {
     margin-top: 0;
     margin-bottom: 4px;
-
     color: $title-text-color;
     font-weight: $title-font-weight;
     font-size: $title-project-font-size;
@@ -30,11 +39,16 @@
   &__category {
     margin-top: 0;
     margin-bottom: 0;
-
     color: $primary-text-color;
     font-size: $button-team-project-font-size;
-    line-height: 1.87;
+    line-height: 1.88;
     font-weight: $primary-font-weight;
+  }
+}
+
+.project:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
   }
 }
 
@@ -77,14 +91,18 @@
 
 .project__description {
   margin: 0;
-  padding: 64px 24px;
+  padding: 77px 24px;
 
   color: $primary-white-color;
   font-size: $title-project-font-size;
   line-height: 1.56;
   font-weight: $primary-font-weight;
-}
 
-.project__image {
-  @extend %image;
+  @media screen and (min-widht: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-widht: 1200px) {
+    padding: 64px 24px;
+  }
 }

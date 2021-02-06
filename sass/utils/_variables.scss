@@ -12,11 +12,17 @@ $border-project-color: #eeeeee;
 
 $main-font: roboto, sans-serif;
 $secondary-font: raleway, sans-serif;
+$secondary-font-size: 12px;
 $main-font-size: 14px;
 $logo-font-size: 26px;
 $hero-font-size: 44px;
+$title-form-size: 20px;
+$tel-font-size-mob: 34px;
+$mail-font-size-mob: 24px;
 $button-team-project-font-size: 16px;
 $title-font-size: 36px;
+$title-font-size-mob: 28px;
+$menu-font-size-mob: 40px;
 $title-project-font-size: 18px;
 $primary-font-weight: 400;
 $secondary-font-weight: 500;
@@ -25,5 +31,5 @@ $hero-title-font-weight: 900;
 
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 $border-radius-button: 4px;
-$primary-duration: 250ms;
+$primary-duration: 5000ms;
 $button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

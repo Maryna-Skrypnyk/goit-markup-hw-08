@@ -1,5 +1,5 @@
 %list {
-  display: flex;
+  // display: flex;
   padding: 0;
   margin: 0;
 
@@ -8,8 +8,8 @@
 }
 
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 %button {
@@ -36,32 +36,35 @@
   cursor: pointer;
 }
 
-%image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+// %image {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
 
 %title-main {
   margin-top: 0;
   margin-bottom: 30px;
-
   color: $primary-white-color;
-
   font-weight: $hero-title-font-weight;
-  font-size: $hero-font-size;
-  line-height: 1.36;
+  font-size: $logo-font-size;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: $hero-font-size;
+    line-height: 1.36;
+  }
 }
 
 %title-section {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $title-text-color;
   font-weight: $title-font-weight;
-  font-size: $title-font-size;
+  font-size: $title-font-size-mob;
   line-height: 1.17;
   text-align: center;
 }

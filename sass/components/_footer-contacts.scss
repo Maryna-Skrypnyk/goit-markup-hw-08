@@ -1,28 +1,46 @@
 .page-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
+  @extend %section;
   background-color: $footer-bg-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.address-footer__address {
-  margin-bottom: 9px;
+.address-footer {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
-  color: $primary-white-color;
-  text-decoration: none;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
-  font-weight: $primary-font-weight;
-  font-style: normal;
+  &__address {
+    margin-bottom: 8px;
+    color: $primary-white-color;
+    font-weight: $primary-font-weight;
+    font-style: normal;
+    text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .contact-footer {
   &__list {
     @extend %list;
-    display: block;
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &__link {

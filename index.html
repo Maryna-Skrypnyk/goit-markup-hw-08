@@ -7,20 +7,76 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body>
+<body class="modal-open">
     <!--Шапка сайта-->
     <header class="header">
         <div class="container container--header">
             <nav class="main-nav">
-                <a href="./index.html" class="logo">
+                <a href="./index.html" class="logo logo--header">
                     Web<span class="logo__header">Studio</span>
                 </a>
+                <button class="main-nav__button is-open" 
+                aria-expanded="false"
+                aria-controls="main-nav__menu" 
+                data-menu-button>
+                    <svg class="main-nav__icon" 
+                    width="40" 
+                    height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
+                        <use class="icon-close" href="./images/svg/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a href="./index.html" class="main-nav__link main-nav__link--current">Студия</a></li>
                     <li class="main-nav__item"><a href="./portfolio.html" class="main-nav__link">Портфолио</a></li>
                     <li class="main-nav__item"><a href="./contacts.html" class="main-nav__link">Контакты</a></li>
                 </ul>
+
+
+                <div class="main-nav__menu is-open" id="main-nav__menu" data-menu>
+                    <div class="menu-navigation">
+                        <ul class="menu-navigation__list">
+                            <li class="menu-navigation__item"><a href="./index.html" class="menu-navigation__link menu-navigation__link--current">Студия</a></li>
+                            <li class="menu-navigation__item"><a href="./portfolio.html" class="menu-navigation__link">Портфолио</a></li>
+                            <li class="menu-navigation__item"><a href="./contacts.html" class="menu-navigation__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-contacts">
+                        <ul class="menu-contacts__list">
+                            <li class="menu-contacts__item menu-contacts__item--tel">
+                                <a href="tel:+380961111111" class="menu-contacts__link menu-contacts__link--tel">
+                                    <span>+38 096 111 11 11</span>
+                                </a>
+                            </li>
+                            <li class="menu-contacts__item menu-contacts__item--mail">
+                                <a href="mailto:info@devstudio.com" class="menu-contacts__link menu-contacts__link--mail">
+                                    <span>info@devstudio.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="networks-menu">
+                        <ul class="networks-menu__list">
+                            <li class="networks-menu__item">
+                                <a href="#" class="networks-menu__link">Instagram</a>
+                            </li>
+                            <li class="networks-menu__item">
+                                <a href="#" class="networks-menu__link">Twitter</a>
+                            </li>
+                            <li class="networks-menu__item">
+                                <a href="#" class="networks-menu__link">Facebook</a>
+                            </li>
+                            <li class="networks-menu__item">
+                                <a href="#" class="networks-menu__link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+
             </nav>
+
             <address class="contacts-header">
                 <ul class="contacts-header__list">
                     <li class="contacts-header__item contacts-header__item--mail">
@@ -125,7 +181,18 @@
                 <ul class="work-list">
                     <li class="work-list__item">
                         <div class="work-list__thumb">
-                            <img src="./images/img1.jpg" alt="Macbook и клавиатура на столе" width="370" class="work-list__image"/>
+                            <picture>
+                                <source srcset="./images/box1/box1@1x.webp 1x, 
+                                ./images/box1/box1@2x.webp 2x, 
+                                ./images/box1/box1@3x.webp 3x" type="image/webp" >
+                                <img 
+                                srcset="./images/box1/box1@1x.jpg 1x, 
+                                ./images/box1/box1@2x.jpg 2x, 
+                                ./images/box1/box1@3x.jpg 3x" 
+                                sizes="(min-width: 1200px) 33.333vw"
+                                src="./images/box1/box1@1x.jpg" 
+                                alt="Macbook и клавиатура на столе" width="370" class="work-list__image" />
+                            </picture>
                             <div class="work-list__overlay">
                                 <h3 class="work-list__title">Десктопные приложения</h3>
                             </div>
@@ -133,7 +200,17 @@
                     </li>
                     <li class="work-list__item">
                         <div class="work-list__thumb">
-                            <img src="./images/img2.jpg" alt="Смартфон и ноутбук" width="370" class="work-list__image"/>
+                            <picture>
+                                <source srcset="./images/box2/box2@1x.webp 1x, 
+                                                ./images/box2/box2@2x.webp 2x, 
+                                                ./images/box2/box2@3x.webp 3x" type="image/webp">
+                                <img srcset="./images/box2/box2@1x.jpg 1x, 
+                                                ./images/box2/box2@2x.jpg 2x, 
+                                                ./images/box2/box2@3x.jpg 3x"
+                                    sizes="(min-width: 1200px) 33.333vw" 
+                                    src="./images/box2/box2@1x.jpg"
+                                    alt="Смартфон и ноутбук" width="370" class="work-list__image" />
+                            </picture>
                             <div class="work-list__overlay">
                                 <h3 class="work-list__title">Мобильные приложения</h3>
                             </div>
@@ -141,7 +218,16 @@
                     </li>
                     <li class="work-list__item">
                         <div class="work-list__thumb">
-                            <img src="./images/img3.jpg" alt="Выбор цвета на дисплее в Macbook" width="370" class="work-list__image"/>
+                            <picture>
+                                <source srcset="./images/box3/box3@1x.webp 1x, 
+                                        ./images/box3/box3@2x.webp 2x, 
+                                        ./images/box3/box3@3x.webp 3x" type="image/webp">
+                                <img srcset="./images/box3/box3@1x.jpg 1x, 
+                                            ./images/box3/box3@2x.jpg 2x, 
+                                            ./images/box3/box3@3x.jpg 3x"
+                                    sizes="(min-width: 1200px) 33.333vw"
+                                    src="./images/box3/box3@1x.jpg" alt="Выбор цвета на дисплее в Macbook" width="370" class="work-list__image" />
+                            </picture>
                             <div class="work-list__overlay">
                                 <h3 class="work-list__title">Дизайнерские решения</h3>
                             </div>
@@ -157,7 +243,40 @@
             <h2 class="section__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img src="./images/photo1.jpg" alt="Фото дизайнера продукта" width="270" class="team-list__image"/>
+
+                        <picture>
+                            <source srcset="./images/team/demianenko-igor/img@1x450.webp 1w, 
+                                            ./images/team/demianenko-igor/img@2x900.webp 2w, 
+                                            ./images/team/demianenko-igor/img@3x1350.webp 3w" 
+                                            type="image/webp"
+                                            media="(max-width: 767px)" >
+                            <source srcset="./images/team/demianenko-igor/img@1x450.jpg 1w, 
+                                            ./images/team/demianenko-igor/img@2x900.jpg 2w, 
+                                            ./images/team/demianenko-igor/img@3x1350.jpg 3w"
+                                            type="image/jpg" 
+                                            media="(max-width: 767px)">
+                            <source srcset="./images/team/demianenko-igor-desk/img@1x270.webp 1w, 
+                                            ./images/team/demianenko-igor-desk/img@2x540.webp 2w, 
+                                            ./images/team/demianenko-igor-desk/img@3x810.webp 3w 
+                                            " type="image/webp"
+                                            media="(min-width: 1200px)">
+                            <source srcset="./images/team/demianenko-igor-desk/img@1x270.jpg 1w, 
+                                            ./images/team/demianenko-igor-desk/img@2x540.jpg 2w, 
+                                            ./images/team/demianenko-igor-desk/img@3x810.jpg 3w" 
+                                            type="image/jpg" 
+                                            media="(min-width: 1200px)">
+                            <source srcset="./images/team/demianenko-igor-tablet/img@1x354.webp 1w, 
+                                            ./images/team/demianenko-igor-tablet/img@2x708.webp 2w, 
+                                            ./images/team/demianenko-igor-tablet/img@3x1062.webp 3w" type="image/webp"
+                                            media="(min-width: 768px)">
+                            <img srcset="./images/team/demianenko-igor-tablet/img@1x354.jpg 1w, 
+                                        ./images/team/demianenko-igor-tablet/img@2x708.jpg 2w, 
+                                        ./images/team/demianenko-igor-tablet/img@3x1062.jpg 3w" 
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw)"
+                                src="./images/team/demianenko-igor-tablet/img@1x354.jpg"
+                                alt="Фото дизайнера продукта" class="team-list__image" />
+                        </picture>
+
                         <h3 class="team-list__name">Игорь Демьяненко</h3>
                         <p class="team-list__position">Product Designer</p>
                         <ul class="team-network-list">
@@ -192,7 +311,36 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/photo2.jpg" alt="Фото разработчика" width="270" class="team-list__image"/>
+
+                        <picture>
+                            <source srcset="./images/team/repina-olga/img@1x450.webp 1w, 
+                                            ./images/team/repina-olga/img@2x900.webp 2w, 
+                                            ./images/team/repina-olga/img@3x1350.webp 3w" type="image/webp"
+                                media="(max-width: 767px)">
+                            <source srcset="./images/team/repina-olga/img@1x450.jpg 1w, 
+                                            ./images/team/repina-olga/img@2x900.jpg 2w, 
+                                            ./images/team/repina-olga/img@3x1350.jpg 3w" type="image/jpg"
+                                media="(max-width: 767px)">
+                            <source srcset="./images/team/repina-olga-desk/img@1x270.webp 1w, 
+                                            ./images/team/repina-olga-desk/img@2x540.webp 2w, 
+                                            ./images/team/repina-olga-desk/img@3x810.webp 3w" 
+                                            type="image/webp" media="(min-width: 1200px)">
+                            <source srcset="./images/team/repina-olga-desk/img@1x270.jpg 1w, 
+                                            ./images/team/repina-olga-desk/img@2x540.jpg 2w, 
+                                            ./images/team/repina-olga-desk/img@3x810.jpg 3w" type="image/jpg"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team/repina-olga-tablet/img@1x354.webp 1w, 
+                                            ./images/team/repina-olga-tablet/img@2x708.webp 2w, 
+                                            ./images/team/repina-olga-tablet/img@3x1062.webp 3w" type="image/webp"
+                                media="(min-width: 768px)">
+                            <img srcset="./images/team/repina-olga-tablet/img@1x354.jpg 1w, 
+                                        ./images/team/repina-olga-tablet/img@2x708.jpg 2w, 
+                                        ./images/team/repina-olga-tablet/img@3x1062.jpg 3w"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw)"
+                                src="./images/team/repina-olga-tablet/img@1x354.jpg" alt="Фото разработчика"
+                                class="team-list__image" />
+                        </picture>
+
                         <h3 class="team-list__name">Ольга Репина</h3>
                         <p class="team-list__position">Frontend Developer</p>
                         <ul class="list team-network-list">
@@ -227,7 +375,35 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/photo3.jpg" alt="Фото маркетолога" width="270" class="team-list__image"/>
+
+                        <picture>
+                            <source srcset="./images/team/tarasov-nikolay/img@1x450.webp 1w, 
+                                            ./images/team/tarasov-nikolay/img@2x900.webp 2w, 
+                                            ./images/team/tarasov-nikolay/img@3x1350.webp 3w" type="image/webp"
+                                media="(max-width: 767px)">
+                            <source srcset="./images/team/tarasov-nikolay/img@1x450.jpg 1w, 
+                                            ./images/team/tarasov-nikolay/img@2x900.jpg 2w, 
+                                            ./images/team/tarasov-nikolay/img@3x1350.jpg 3w" type="image/jpg"
+                                media="(max-width: 767px)">
+                            <source srcset="./images/team/tarasov-nikolay-desk/img@1x270.webp 1w, 
+                                            ./images/team/tarasov-nikolay-desk/img@2x540.webp 2w, 
+                                            ./images/team/tarasov-nikolay-desk/img@3x810.webp 3w" type="image/webp"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team/tarasov-nikolay-desk/img@1x270.jpg 1w, 
+                                            ./images/team/tarasov-nikolay-desk/img@2x540.jpg 2w, 
+                                            ./images/team/tarasov-nikolay-desk/img@3x810.jpg 3w" type="image/jpg"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team/tarasov-nikolay-tablet/img@1x354.webp 1w, 
+                                            ./images/team/tarasov-nikolay-tablet/img@2x708.webp 2w, 
+                                            ./images/team/tarasov-nikolay-tablet/img@3x1062.webp 3w" type="image/webp"
+                                media="(min-width: 768px)">
+                            <img srcset="./images/team/tarasov-nikolay-tablet/img@1x354.jpg 1w, 
+                                        ./images/team/tarasov-nikolay-tablet/img@2x708.jpg 2w, 
+                                        ./images/team/tarasov-nikolay-tablet/img@3x1062.jpg 3w"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw)"
+                                src="./images/team/tarasov-nikolay-tablet/img@1x354.jpg" alt="Фото маркетолога" class="team-list__image" />
+                        </picture>
+
                         <h3 class="team-list__name">Николай Тарасов</h3>
                         <p class="team-list__position">Marketing</p>
                         <ul class="list team-network-list">
@@ -262,7 +438,36 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/photo4.jpg" alt="Фото дизайнера" width="270" class="team-list__image"/>
+
+
+                        <picture>
+                            <source srcset="./images/team/yermakov-mihail/img@1x450.webp 1w, 
+                                            ./images/team/yermakov-mihail/img@2x900.webp 2w, 
+                                            ./images/team/yermakov-mihail/img@3x1350.webp 3w" type="image/webp"
+                                media="(max-width: 767px)">
+                            <source srcset="./images/team/yermakov-mihail/img@1x450.jpg 1w, 
+                                            ./images/team/yermakov-mihail/img@2x900.jpg 2w, 
+                                            ./images/team/yermakov-mihail/img@3x1350.jpg 3w" type="image/jpg"
+                                media="(max-width: 767px)">
+                            <source srcset="./images/team/yermakov-mihail-desk/img@1x270.webp 1w, 
+                                            ./images/team/yermakov-mihail-desk/img@2x540.webp 2w, 
+                                            ./images/team/yermakov-mihail-desk/img@3x810.webp 3w" type="image/webp"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team/yermakov-mihail-desk/img@1x270.jpg 1w, 
+                                            ./images/team/yermakov-mihail-desk/img@2x540.jpg 2w, 
+                                            ./images/team/yermakov-mihail-desk/img@3x810.jpg 3w" type="image/jpg"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team/yermakov-mihail-tablet/img@1x354.webp 1w, 
+                                            ./images/team/yermakov-mihail-tablet/img@2x708.webp 2w, 
+                                            ./images/team/yermakov-mihail-tablet/img@3x1062.webp 3w" type="image/webp"
+                                media="(min-width: 768px)">
+                            <img srcset="./images/team/yermakov-mihail-tablet/img@1x354.jpg 1w, 
+                                            ./images/team/yermakov-mihail-tablet/img@2x708.jpg 2w, 
+                                            ./images/team/yermakov-mihail-tablet/img@3x1062.jpg 3w"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw)"
+                                src="./images/team/yermakov-mihail-tablet/img@1x354.jpg" alt="Фото дизайнера" class="team-list__image" />
+                        </picture>
+
                         <h3 class="team-list__name">Михаил Ермаков</h3>
                         <p class="team-list__position">UI Designer</p>
                         <ul class="team-network-list">
@@ -357,52 +562,58 @@
     <!--Футер-->
     <footer class="page-footer">
         <div class="container container--footer">
-            <div class="address-footer">
-                <a href="/" class="logo address-footer__logo">
-                    Web</span><span class="logo__footer">Studio</span>
-                </a>
-                <address class="address-footer__address">г. Киев, пр-т Леси Украинки, 26</address>
-                <address class="contact-footer">
-                    <ul class="contact-footer__list">
-                        <li class="contact-footer__item"><a href="mailto:info@example.com" class="contact-footer__link">info@example.com</a></li>
-                        <li class="contact-footer__item"><a href="tel:+380991111111" class="contact-footer__link">+38 099 111 11 11</a></li>
+            
+            <div class="tablet-footer">
+                <div class="address-footer">
+                    <a href="/" class="logo logo--footer">
+                        Web</span><span class="logo__footer">Studio</span>
+                    </a>
+                    <address class="address-footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+                    <address class="contact-footer">
+                        <ul class="contact-footer__list">
+                            <li class="contact-footer__item"><a href="mailto:info@example.com"
+                                    class="contact-footer__link">info@example.com</a></li>
+                            <li class="contact-footer__item"><a href="tel:+380991111111" class="contact-footer__link">+38 099 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                
+                <div class="networks">
+                    <p class="networks__content">Присоединяйтесь</p>
+                    <ul class="networks-list">
+                        <li class="networks-list__item">
+                            <a href="#" class="networks-list__link">
+                                <svg class="networks-list__icon">
+                                    <use href="./images/svg/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="networks-list__item">
+                            <a href="#" class="networks-list__link">
+                                <svg class="networks-list__icon">
+                                    <use href="./images/svg/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="networks-list__item">
+                            <a href="#" class="networks-list__link">
+                                <svg class="networks-list__icon">
+                                    <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="networks-list__item">
+                            <a href="#" class="networks-list__link">
+                                <svg class="networks-list__icon">
+                                    <use href="./images/svg/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
+                </div>
             </div>
-    
-            <div class="networks">
-                <p class="networks__content">Присоединяйтесь</p>
-                <ul class="networks-list">
-                    <li class="networks-list__item">
-                        <a href="#" class="networks-list__link">
-                            <svg class="networks-list__icon">
-                                <use href="./images/svg/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="networks-list__item">
-                        <a href="#" class="networks-list__link">
-                            <svg class="networks-list__icon">
-                                <use href="./images/svg/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="networks-list__item">
-                        <a href="#" class="networks-list__link">
-                            <svg class="networks-list__icon">
-                                <use href="./images/svg/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="networks-list__item">
-                        <a href="#" class="networks-list__link">
-                            <svg class="networks-list__icon">
-                                <use href="./images/svg/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            
 
             <div class="subscribe">
                 <p class="subscribe__content">Подпишитесь на рассылку</p>
@@ -479,7 +690,10 @@
             
         </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+
 
 </body>
 </html>

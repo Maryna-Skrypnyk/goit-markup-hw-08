@@ -1,14 +1,20 @@
 .networks {
-  margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
-  width: 206px;
-  height: 80px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 
   &__content {
     margin-top: 0;
     margin-bottom: 20px;
-
-    font-weight: 700;
+    font-weight: $title-font-weight;
     line-height: 1.14;
     text-transform: uppercase;
     color: $primary-white-color;
@@ -17,7 +23,12 @@
 
 .networks-list {
   @extend %list;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 
   &__item {
     width: 44px;
