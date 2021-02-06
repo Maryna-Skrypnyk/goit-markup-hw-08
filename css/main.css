@@ -395,6 +395,10 @@ body {
   color: #757575;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -2018,6 +2022,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
   padding: 0;
   border: none;
   background-color: #ffffff;
@@ -2042,7 +2047,6 @@ img {
 
 .main-nav__icon {
   fill: currentColor;
-  z-index: 1;
 }
 
 .main-nav__button .icon-close {
@@ -2057,18 +2061,18 @@ img {
   display: none;
 }
 
-.main-nav__menu {
-  background-color: #ffffff;
-  padding: 48px 0 48px 40px;
-}
-
 @media screen and (max-width: 767px) {
   .main-nav__menu {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
+    background-color: #ffffff;
+    padding: 48px 0 48px 40px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     width: 100%;
+    height: auto;
   }
   .main-nav__menu.is-open {
     display: block;
