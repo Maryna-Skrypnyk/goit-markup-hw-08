@@ -24,11 +24,16 @@
   }
 
   &--hero {
-    padding: 118px 0 0;
-    width: 360px;
+    padding: 118px 60px;
+    // width: 360px;
+
+    @media screen and (min-width: 768px) {
+      padding: 118px 0;
+      width: 360px;
+    }
 
     @media screen and (min-width: 1200px) {
-      padding: 200px 0 0;
+      padding: 200px 0;
       width: 696px;
     }
   }
