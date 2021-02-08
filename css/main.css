@@ -395,6 +395,10 @@ body {
   color: #757575;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -1143,7 +1147,6 @@ img {
 }
 
 .modal {
-  position: relative;
   width: 100%;
   max-width: 450px;
   margin-left: auto;
@@ -1187,6 +1190,8 @@ img {
             transition-duration: 250ms;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    max-width: 450px;
   }
   .backdrop.is-hidden .modal {
     -webkit-transform: translate(-50%, -50%) scale(0.9);
@@ -2068,7 +2073,6 @@ img {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     width: 100%;
-    height: auto;
   }
   .main-nav__menu.is-open {
     display: block;
