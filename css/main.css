@@ -1673,7 +1673,6 @@ img {
 
 .project__content {
   padding: 20px 24px;
-  background-color: #ffffff;
 }
 
 .project__name {
@@ -1754,19 +1753,30 @@ img {
 
 .project__description {
   padding: 77px 24px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
   color: #ffffff;
   font-size: 18px;
   line-height: 1.56;
   font-weight: 400;
 }
 
-@media screen and (min-widht: 768px) {
+@media screen and (max-width: 479px) {
+  .project__description {
+    font-size: calc((100vw - 320px) / (480 - 320) * (18 - 12) + 12px);
+    padding-top: calc((100vw - 320px) / (480 - 320) * (77 - 50) + 50px);
+    padding-bottom: calc((100vw - 320px) / (480 - 320) * (77 - 50) + 50px);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .project__description {
     padding: 49px 24px;
   }
 }
 
-@media screen and (min-widht: 1200px) {
+@media screen and (min-width: 1200px) {
   .project__description {
     padding: 64px 24px;
   }
