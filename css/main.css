@@ -1172,6 +1172,7 @@ img {
 .backdrop.is-hidden .modal {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1189,8 +1190,6 @@ img {
             transition-duration: 250ms;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    width: 100%;
-    max-width: 450px;
   }
   .backdrop.is-hidden .modal {
     -webkit-transform: translate(-50%, -50%) scale(0.9);
