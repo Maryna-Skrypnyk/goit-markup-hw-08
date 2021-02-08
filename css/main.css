@@ -2077,7 +2077,7 @@ img {
     top: 0;
     left: 0;
     background-color: #ffffff;
-    padding: 48px 0 48px 40px;
+    padding: 48px 40px 48px 40px;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     width: 100%;
@@ -2101,6 +2101,12 @@ img {
 
 .menu-navigation__list {
   margin-bottom: 302px;
+}
+
+@media screen and (max-width: 360px) {
+  .menu-navigation__list {
+    margin-bottom: 185px;
+  }
 }
 
 .menu-contacts__list {
@@ -2151,6 +2157,12 @@ img {
   color: #2196f3;
 }
 
+@media screen and (max-width: 479px) {
+  .menu-contacts__link--tel {
+    font-size: calc((100vw - 320px) / (480 - 320) * (34 - 26) + 26px);
+  }
+}
+
 .menu-contacts__link--mail {
   font-size: 24px;
   color: #757575;
@@ -2166,10 +2178,22 @@ img {
   color: #2196f3;
 }
 
+@media screen and (max-width: 479px) {
+  .menu-contacts__link--mail {
+    font-size: calc((100vw - 320px) / (480 - 320) * (24 - 20) + 20px);
+  }
+}
+
 .networks-menu__link {
   color: #2196f3;
   font-size: 18px;
   line-height: 1.22;
+}
+
+@media screen and (max-width: 479px) {
+  .networks-menu__link {
+    font-size: calc((100vw - 320px) / (480 - 320) * (18 - 12) + 12px);
+  }
 }
 
 .networks-menu__list {
