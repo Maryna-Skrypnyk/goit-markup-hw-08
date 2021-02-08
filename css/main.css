@@ -1302,13 +1302,6 @@ img {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 1200px) {
-  .page-footer {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .address-footer {
     margin-bottom: 60px;
