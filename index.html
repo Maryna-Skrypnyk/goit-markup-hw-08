@@ -15,22 +15,19 @@
                 <a href="./index.html" class="logo logo--header">
                     Web<span class="logo__header">Studio</span>
                 </a>
-                <button type="button" class="main-nav__button" 
-                aria-expanded="false"
-                aria-controls="main-nav__menu" 
-                data-menu-button>
-                    <svg class="main-nav__icon" 
-                    width="40" 
-                    height="40" aria-label="Переключатель мобильного меню">
-                        <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
-                        <use class="icon-close" href="./images/svg/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>
+                
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a href="./index.html" class="main-nav__link main-nav__link--current">Студия</a></li>
                     <li class="main-nav__item"><a href="./portfolio.html" class="main-nav__link">Портфолио</a></li>
                     <li class="main-nav__item"><a href="./contacts.html" class="main-nav__link">Контакты</a></li>
                 </ul>
+
+                <!-- <button type="button" class="main-nav__button" aria-expanded="false" aria-controls="main-nav__menu" data-menu-button>
+                    <svg class="main-nav__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
+                        <use class="icon-close" href="./images/svg/sprite.svg#icon-close"></use>
+                    </svg>
+                </button> -->
 
 
                 <div class="main-nav__menu" id="main-nav__menu" data-menu>
@@ -70,8 +67,14 @@
                                 <a href="#" class="networks-menu__link">LinkedIn</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> 
                 </div>
+                <button type="button" class="main-nav__button" aria-expanded="false" aria-controls="main-nav__menu" data-menu-button>
+                    <svg class="main-nav__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
+                        <use class="icon-close" href="./images/svg/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
             
             </nav>
 
@@ -709,7 +712,6 @@
     <script src="./js/menu.js"></script>
 
     <script src="./js/modal.js"></script>
-   
 
 </body>
 </html>
