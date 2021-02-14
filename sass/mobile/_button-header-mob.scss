@@ -6,6 +6,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  outline: transparent;
   color: $black-color;
 
   @include transit(color);
@@ -36,8 +37,8 @@
   display: none;
 }
 
-.main-nav__button.is-open {
-  position: fixed;
-  top: 10px;
-  right: 15px;
-}
+// .main-nav__button.is-open {
+//   position: fixed;
+//   top: 10px;
+//   right: 15px;
+// }
