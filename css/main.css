@@ -452,6 +452,13 @@ img {
   padding: 118px 60px;
 }
 
+@media screen and (max-width: 479px) {
+  .container--hero {
+    padding-left: calc((100vw - 320px) / (480 - 320) * (60 - 20) + 20px);
+    padding-right: calc((100vw - 320px) / (480 - 320) * (60 - 20) + 20px);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container--hero {
     padding: 118px 0;
@@ -588,6 +595,12 @@ img {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero-desk/hero-img@3x4800.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desk/hero-img@3x4800.jpg");
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .overlay__title {
+    font-size: calc((100vw - 320px) / (480 - 320) * (26 - 20) + 20px);
   }
 }
 

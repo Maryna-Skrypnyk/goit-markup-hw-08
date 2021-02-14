@@ -125,6 +125,10 @@
 
 .overlay__title {
   @extend %title-main;
+
+  @media screen and (max-width: 479px) {
+    font-size: calc((100vw - 320px) / (480 - 320) * (26 - 20) + 20px);
+  }
 }
 
 .button-hero {

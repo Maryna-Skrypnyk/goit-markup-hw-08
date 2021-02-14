@@ -28,6 +28,11 @@
     padding: 118px 60px;
     // width: 360px;
 
+    @media screen and (max-width: 479px) {
+      padding-left: calc((100vw - 320px) / (480 - 320) * (60 - 20) + 20px);
+      padding-right: calc((100vw - 320px) / (480 - 320) * (60 - 20) + 20px);
+    }
+
     @media screen and (min-width: 768px) {
       padding: 118px 0;
       width: 360px;
